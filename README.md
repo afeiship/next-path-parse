@@ -38,6 +38,9 @@ const res = nx.pathParse('/User/feizheng/github/test/build/static/css/8.f96cc274
 */
 ```
 
+## resources
+- https://nodejs.org/api/path.html#path_path_basename_path_ext
+
 ## license
 Code released under [the MIT license](https://github.com/afeiship/next-path-parse/blob/master/LICENSE.txt).
 
