@@ -2,8 +2,8 @@
  * name: @feizheng/next-path-parse
  * description: Parse path for next.
  * homepage: https://github.com/afeiship/next-path-parse
- * version: 1.0.1
- * date: 2020-06-22T09:00:02.996Z
+ * version: 1.0.2
+ * date: 2020-06-22T09:22:50.520Z
  * license: MIT
  */
 
@@ -12,47 +12,6 @@
   var nx = global.nx || require('@feizheng/next-js-core2');
   var path = require('path');
   var DEFAULT_OPTIONS = { cwd: process.cwd(), context: '' };
-
-  // var relative = require('relative');
-  // var fg = require('fast-glob');
-  // var path = require('path');
-
-  // var files = fg.sync('**', {
-  //   absolute: true,
-  //   cwd: path.join(__dirname, 'build')
-  // });
-
-  // console.log(files);
-
-  // // next-path-parse
-  // nx.pathParse('/User/feizheng/github/test/build/static/css/8.f96cc274.chunk.css', {
-  //   cwd: process.cwd(),
-  //   context: 'build'
-  // });
-
-
-
-  // cwd: /User/feizheng/github/test/
-  // context: build
-
-  // root: '/'
-  // parent: 'build/static/css/8.f96cc274.chunk.css'
-  // relative: 'static/css/8.f96cc274.chunk.css'
-  // base: '8.f96cc274.chunk.css'
-  // ext: path.extname('8.f96cc274.chunk.css') --> .css
-  // dir: path.dirname('---') --> /User/feizheng/github/test/build/static/css
-
-  // cwd: process.cwd();
-  // context: build
-  // glob: '**'
-
-
-  // relative: static/css/8.f96cc274.chunk.css
-  // relative_context: build/static/css/8.f96cc274.chunk.css
-  // absoulte: /User/feizheng/github/test/static/css/8.f96cc274.chunk.css
-
-  // console.log(files);
-
 
   nx.pathParse = function (inPath, inOptions) {
     var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
@@ -69,8 +28,7 @@
         parent: parent,
         relative: relative
       }
-    )
-    // package codes...
+    );
   };
 
   if (typeof module !== 'undefined' && module.exports) {
