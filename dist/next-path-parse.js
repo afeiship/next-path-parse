@@ -2,8 +2,8 @@
  * name: @feizheng/next-path-parse
  * description: Parse path for next.
  * homepage: https://github.com/afeiship/next-path-parse
- * version: 1.0.0
- * date: 2020-06-22T08:58:11.454Z
+ * version: 1.0.1
+ * date: 2020-06-22T09:00:02.996Z
  * license: MIT
  */
 
