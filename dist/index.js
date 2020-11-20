@@ -3,7 +3,7 @@
  * description: Parse path for next.
  * homepage: https://github.com/afeiship/next-path-parse
  * version: 1.0.0
- * date: 2020-11-20 10:18:19
+ * date: 2020-11-20 10:18:58
  * license: MIT
  */
 
