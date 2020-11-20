@@ -1,15 +1,15 @@
 /*!
- * name: @feizheng/next-path-parse
+ * name: @jswork/next-path-parse
  * description: Parse path for next.
  * homepage: https://github.com/afeiship/next-path-parse
- * version: 1.0.2
- * date: 2020-06-22T09:22:50.520Z
+ * version: 1.0.0
+ * date: 2020-11-20 10:18:19
  * license: MIT
  */
 
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var path = require('path');
   var DEFAULT_OPTIONS = { cwd: process.cwd(), context: '' };
 
@@ -20,20 +20,14 @@
     var relative = full.split(path.join(options.cwd, options.context, '/'))[1];
     var parent = path.join(options.context, relative);
 
-    return nx.mix(
-      options,
-      result,
-      {
-        full: full,
-        parent: parent,
-        relative: relative
-      }
-    );
+    return nx.mix(options, result, {
+      full: full,
+      parent: parent,
+      relative: relative
+    });
   };
 
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = nx.pathParse;
   }
 })();
-
-//# sourceMappingURL=next-path-parse.js.map

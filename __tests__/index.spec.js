@@ -1,8 +1,8 @@
-const nx = require('@feizheng/next-js-core2');
-require('../src/next-path-parse');
+(function () {
+  require('../src');
 
-describe('api.basic test', () => {
-  test('nx.pathParse', function () {
+  describe('api.basic test', () => {
+    test('nx.pathParse', function () {
     var res = nx.pathParse('/User/feizheng/github/test/build/static/css/8.f96cc274.chunk.css', {
       cwd: '/User/feizheng/github/test/',
       context: 'build'
@@ -21,4 +21,5 @@ describe('api.basic test', () => {
       relative: 'static/css/8.f96cc274.chunk.css'
     });
   });
-});
+  });
+})();

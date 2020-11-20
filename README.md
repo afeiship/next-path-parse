@@ -3,19 +3,17 @@
 
 [![version][version-image]][version-url]
 [![license][license-image]][license-url]
-![size][size-image]
-![download][download-image]
-
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
 
 ## installation
 ```bash
-npm install -S @feizheng/next-path-parse
+npm install -S @jswork/next-path-parse
 ```
 
 ## usage
 ```js
-import '@feizheng/next-path-parse';
-
+import '@jswork/next-path-parse';
 
 const res = nx.pathParse('/User/feizheng/github/test/build/static/css/8.f96cc274.chunk.css', {
   cwd: '/User/feizheng/github/test/',
@@ -38,17 +36,17 @@ const res = nx.pathParse('/User/feizheng/github/test/build/static/css/8.f96cc274
 */
 ```
 
-## resources
-- https://nodejs.org/api/path.html#path_path_basename_path_ext
-
 ## license
 Code released under [the MIT license](https://github.com/afeiship/next-path-parse/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@feizheng/next-path-parse
-[version-url]: https://npmjs.org/package/@feizheng/next-path-parse
+[version-image]: https://img.shields.io/npm/v/@jswork/next-path-parse
+[version-url]: https://npmjs.org/package/@jswork/next-path-parse
 
-[license-image]: https://img.shields.io/npm/l/@feizheng/next-path-parse
+[license-image]: https://img.shields.io/npm/l/@jswork/next-path-parse
 [license-url]: https://github.com/afeiship/next-path-parse/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/next-path-parse
-[download-image]: https://img.shields.io/npm/dw/@feizheng/next-path-parse
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/next-path-parse
+[size-url]: https://github.com/afeiship/next-path-parse/blob/master/dist/next-path-parse.min.js
+
+[download-image]: https://img.shields.io/npm/dm/@jswork/next-path-parse
+[download-url]: https://www.npmjs.com/package/@jswork/next-path-parse
